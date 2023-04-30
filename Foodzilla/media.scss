@@ -1,0 +1,296 @@
+@media screen and (max-width:600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        height: auto;
+        justify-content: start;
+        align-items: start;
+        padding-left: 20px;
+        // padding: 0;
+
+    }
+
+
+
+    nav {
+        justify-content: start;
+        position: static;
+        width: 420px;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+        .menu {
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+    .block {
+        width: 385px;
+        height: auto;
+        flex-direction: column;
+
+        .text {
+            display: flex;
+            width: 380px;
+            justify-content: start;
+            align-items: center;
+
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+
+        }
+
+        .btns {
+            display: flex;
+        }
+
+        .foto {
+            width: 370px;
+            margin: 40px 0;
+            padding: 0;
+
+        }
+    }
+
+    section {
+        flex-direction: column;
+        width: 385px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about {
+        width: 385px;
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            width: 90%;
+        }
+    }
+
+    b {
+        margin-top: 30px;
+    }
+
+    .title {
+        width: 400px;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* .menuCardBlock{
+    //     display: none;
+    // }
+    // .receptCardBlock{
+    //     display: none;
+    // }
+    // .contactBlock{
+    //     display: none;
+    // }
+
+    // .chefBlock{
+    //     display: none;
+    // }
+    */
+
+
+    .cardBlock {
+        flex-direction: column;
+        width: 385px;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .card {
+            width: 350px;
+            // margin-left: 60px;
+
+        }
+    }
+
+    .menuBlock {
+        display: flex;
+        width: 385px;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+        .menuCardBlock {
+            flex-direction: column;
+            margin: 0;
+            height: auto;
+            padding: 0;
+            gap: 30px;
+
+            .menuCard {
+                width: 350px;
+                margin-left: 10px;
+            }
+        }
+
+        .menuCard button {
+            width: 90%;
+            margin: 20px;
+
+        }
+    }
+
+    .receptCardBlock {
+        width: 385px;
+        height: auto;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 30px;
+
+
+        .receptCard {
+            width: 350px;
+            // margin-left: 60px;
+            margin-left: -10px;
+        }
+    }
+
+    .chefBlock {
+        width: 385px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .chefCardBlock {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .chefCard {
+                width: 350px;
+                // margin-left: 70px;
+                padding: 0;
+            }
+
+            .chefCard img {
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+
+    .testimonBlock {
+        flex-direction: column;
+        width: 385px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        .testimonCard {
+            flex-direction: column;
+            gap: 30px;
+
+            .card {
+                width: 380px;
+            }
+        }
+    }
+
+    .contactBlock {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        background-image: none;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    .contactText{
+        margin-left: 10px;
+        width: 350px;
+        margin: 0;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactBlock form {
+        width: 350px;
+        // border: 1px solid red;
+        box-shadow: 1px 1px 6px lightgrey;
+        margin-left: 15px;
+        margin-top: 50px;
+    }
+
+    .back-color{
+        display: none;
+    }
+    form #comment {
+        width: 100%;
+    }
+
+    .top {
+        box-shadow: 1px 1px 6px lightgrey;
+        display: none;
+        margin: 0 -15px
+    }
+
+    .contactText h1 {
+        font-size: 40px;
+    }
+
+    .foodzilla {
+        margin: 30px;
+        flex-direction: column;
+        height: auto;
+        margin-left: 0;
+        width: 340px;
+        box-shadow: 1px 1px 6px rgb(155, 153, 153);
+        padding: 15px;
+
+        .foodzill {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .contactBlock .group {
+        flex-direction: column;
+        height: auto;
+    }
+}

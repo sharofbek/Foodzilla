@@ -1,0 +1,624 @@
+@font-face {
+    /* font-family: 'Irish Grover', cursive; */
+    font-family: 'Island Moments';
+    src: url(./assets/FONTS/IslandMoments-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Irish Grover';
+    /* font-family: 'Island Moments' , cursive; */
+    src: url(./assets/FONTS/IrishGrover-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #f4f4f4;
+
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    padding: 0 50px;
+
+}
+
+.logo img {
+    width: 120px;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #444444;
+    transition: .2s;
+    width: auto;
+}
+
+.menu a:hover {
+    color: #F94F46;
+    border-bottom: 2px solid #F94F46;
+    text-align: center;
+
+}
+
+.login {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.login button {
+    padding: 5px 15px;
+    background-color: #21a0aa;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.login button:hover {
+    background-color: #fff;
+    color: #21a0aa;
+    border: 1px solid #21a0aa;
+}
+
+
+
+
+.container {
+    width: 100%;
+    background-color: #fff;
+
+}
+
+
+.block {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.text,
+.foto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foto img {
+    width: 100%;
+}
+
+.text {
+    padding: 0 30px;
+}
+
+.text h1 {
+    font-size: 60px;
+    font-family: Irish Grover, cursive;
+    font-weight: 500;
+    text-shadow: 0 3px 3px rgb(168, 167, 167);
+
+}
+
+.text h1 span {
+    font-family: 'Irish Grover';
+}
+
+.text p {
+    width: 80%;
+    text-align: justify;
+    margin: 30px 0;
+}
+
+.text button {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.order {
+    background-color: #f94f46;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.outline {
+    background-color: #fff;
+    border-color: #F94F46 !important;
+    color: #f94f46;
+    margin-left: 15px;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.about {
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+
+}
+
+b {
+    font-size: 18px;
+    color: #F94F46;
+
+}
+
+.b {
+    font-size: 18px;
+    color: #21A0AA;
+
+}
+
+.title {
+    font-size: 40px;
+    margin: 30px 0;
+
+}
+
+.about p {
+    margin: 15px 0;
+}
+
+.cardBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.card {
+    width: 18%;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+.card img {
+    width: 80%;
+}
+
+.menuBlock {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.menuCardBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.menuCard {
+    width: 18%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menuCard img {
+    width: 100%;
+
+
+
+}
+
+.menuCard .veg {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 5px;
+}
+
+.menuCard button {
+    width: 80px;
+    height: 30px;
+    background-color: #444444;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    /* transform: translateX(110px); */
+    text-align: center;
+    margin-left: 100px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.menuCard button:hover {
+    cursor: pointer;
+
+    color: #444444;
+    border: 1px solid #444444;
+    background-color: transparent;
+
+}
+
+.menuBlock .view {
+    color: #F94F46;
+    border: 1px solid #F94F46;
+    width: 145px;
+    height: 37px;
+    border-radius: 5px;
+    background-color: transparent;
+    /* transform: translateY(70px); */
+    margin-top: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menuBlock .view:hover {
+    background-color: #F94F46;
+    color: #fff;
+}
+
+.receptCard {
+    width: 19%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.receptCard img {
+    width: 100%;
+}
+
+.receptCardBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.clas {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.receptCard button {
+    width: 80px;
+    height: 30px;
+    background-color: #21A0AA;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    transition: .4s;
+}
+
+.receptCard button:hover {
+    background-color: #fff;
+    border-color: #21A0AA;
+    color: #21A0AA;
+}
+
+.receptCard p {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.menuBlock .all {
+    color: #21A0AA;
+    border: 1px solid #21A0AA;
+    width: 110px;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.menuBlock .all:hover {
+    background-color: #21A0AA;
+    color: #fff;
+}
+
+.chefBlock {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.chefCardBlock {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.chefCard {
+    width: 21%;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefCard img {
+    width: 100%;
+
+}
+
+
+.testimonBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.testimonCard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    margin-bottom: 100px;
+}
+
+.testimonCard .card {
+    width: 31%;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.testimonCard .card:nth-child(2) {
+    width: 33%;
+    height: 220px;
+    margin-top: -10px;
+    padding: 50px 0;
+
+}
+
+.testimonCard .card .user {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.testimonCard .card .img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.testimonCard .card h3 {
+    color: #21A0AA;
+}
+
+.testimonCard .card p {
+    font-size: 12px;
+    color: grey;
+}
+
+.testimonCard .card span {
+    font-size: 12px;
+    color: grey;
+    line-height: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+.back-color {
+    width: 100%;
+    height: 100px;
+    background-color: #f4f4f4;
+}
+
+.contactBlock {
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./assets/image\ 8.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+
+
+
+}
+
+.contactText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+    margin: 150px 220px;
+    gap: 20px;
+
+}
+
+.group{
+    display: flex;  
+}
+
+.contactText h1 {
+    font-size: 50px;
+}
+
+.contactText span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contactBlock form {
+    width: 556px;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 15px;
+    justify-content: start;
+    background-color: #fff;
+    height: 379px;
+    margin-right: 50px;
+    margin-top: -50px;
+}
+
+form h2 {
+    margin: auto;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#comment {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.Submit {
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.Submit:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+
+.foodzilla {
+    width: 92%;
+    height: 300px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 16px;
+    display: flex;
+    margin-top: -60px;
+    justify-content: space-between;
+    padding: 80px;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.foodzill {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 16px;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 16px;
+
+
+}
+
+.more,
+.social p {
+    font-size: 14px;
+}
+
+.h5 {
+    font-size: 20px;
+    color: #21A0AA;
+}
+
+.top {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    color: #21A0AA;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+    transform: translateY(-35px);
+    left: 47%;
+}

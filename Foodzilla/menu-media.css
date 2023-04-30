@@ -1,0 +1,168 @@
+@media screen and (max-width:600px) {
+    nav {
+        width: 400px;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: -10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    nav .login {
+        flex-direction: column;
+    }
+
+    nav input {
+        width: 200px;
+        height: 30px;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .block {
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        padding: 2px;
+    }
+
+    .block .text {
+        margin: 0;
+        text-align: center;
+    }
+
+    .block .text h1 {
+        font-size: 18px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .block .text p {
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .block img {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+
+    .block2 {
+        width: 380px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .block2 .filter {
+        width: 310px;
+        margin-left: -12px;
+    }
+
+    .block2 .card-group {
+        flex-direction: column;
+        width: 370px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin-left: -15px;
+        gap: 30px;
+    }
+
+    .block2 .card-group .menuCard {
+        width: 330px;
+    }
+    .block2 .card-group .menuCard button{
+        width: 90%;
+        margin: 5px auto;
+    }
+
+    .results{
+        width: 380px;
+        padding: 0 30px;
+    }
+
+    .block3{
+        width: 380px;
+        height: auto;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .block3 .small{
+        width: 340px;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 17px;
+        padding: 8px;
+        text-align: center;
+        gap: 15px;
+    }
+    .block3 .small h1{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .contactBlock{
+       flex-direction: column; 
+       width: 405px;
+       height: auto;
+       gap: 30px;
+       justify-content: center;
+       align-items: center;
+    }
+    .contactBlock .group{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .contactText{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contactText h1{
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .contactBlock form{
+        width: 320px;
+        margin-left: 35px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .foodzilla{
+        width: 320px;
+        left: 20px;
+        flex-direction: column;
+        /* position: absolute; */
+        height: auto;
+        text-align: center;
+        padding: 8px;
+        margin-left: 44px;
+
+
+    }
+   
+}

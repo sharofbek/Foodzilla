@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+@font-face {
+    /* font-family: 'Irish Grover', cursive; */
+    font-family: 'Island Moments';
+    src: url(./assets/FONTS/IslandMoments-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Irish Grover';
+    /* font-family: 'Island Moments' , cursive; */
+    src: url(./assets/FONTS/IrishGrover-Regular.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    /* position: fixed; */
+    top: 0;
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+
+.logo img {
+    width: 120px;
+}
+
+.menu a {
+    margin: 0 10px;
+    color: #444444;
+    transition: .2s;
+    width: auto;
+}
+
+.menu a:hover {
+    color: #F94F46;
+    border-bottom: 2px solid #F94F46;
+    text-align: center;
+
+}
+
+.login {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.login button {
+    padding: 5px 15px;
+    background-color: #21a0aa;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.login button:hover {
+    background-color: #fff;
+    color: #21a0aa;
+    border: 1px solid #21a0aa;
+}
+
+
+
+nav input {
+    width: 400px;
+    height: 35px;
+    border: 1px solid transparent;
+    padding-left: 40px;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+
+
+}
+
+.bi-search {
+    position: absolute;
+    right: 680px;
+    color: grey;
+}
+
+.container {
+    background-color: #fff;
+    width: 100%;
+
+}
+
+.block {
+    display: flex;
+    height: 300px;
+    /* transform: translateY(200px); */
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    background-image: url(./assets/Rectangle\ 273.png);
+    background-size: cover;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+.text {
+    margin-left: 70px;
+    font-family: 'Irish Grover';
+    color: white;
+    width: 50%;
+
+
+}
+
+.block img {
+    width: 280px;
+    padding-bottom: 47px;
+}
+
+.text h1 {
+    font-family: 'Irish Grover';
+    font-size: 60px;
+    margin-bottom: 30px;
+
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 75%;
+}
+
+.block2 {
+    margin: 50px auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    height: auto;
+    margin-bottom: 50px;
+
+}
+
+.filter {
+    width: 30%;
+    height: 390px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 15px;
+    gap: 10px;
+}
+
+.filter input {
+    height: 37px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+
+.filter .header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.boder {
+    width: 90%;
+    height: 2.5px;
+    background-color: #21a0aa;
+    margin: 10px;
+
+}
+
+.border {
+    width: 100%;
+    height: 3.5px;
+    background-color: #21a0aa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+label {
+    font-weight: 600;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid grey;
+
+}
+
+.fast {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    gap: 10px;
+    align-items: center;
+}
+
+.checkbox {
+    width: 20px;
+    accent-color: rgb(247, 92, 92);
+}
+
+.border1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.card-group {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 187px;
+
+
+}
+
+.results {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.results select {
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    height: 35px;
+    width: 150px;
+}
+
+.p {
+    color: grey;
+}
+
+.menuCard {
+    width: 23%;
+    border-radius: 10px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.menuCard img {
+    width: 100%;
+
+
+
+}
+
+.menuCard .veg {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 8px 5px;
+}
+
+.menuCard button {
+    width: 80px;
+    height: 25px;
+    background-color: #444444;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    margin-left: 90px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+.red p {
+    color: red;
+}
+
+.menuCard button:hover {
+    cursor: pointer;
+
+    color: #444444;
+    border: 1px solid #444444;
+    background-color: transparent;
+
+}
+
+.block3 {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 70px;
+}
+
+.small {
+    width: 85%;
+    height: 160px;
+    background-color: #21a0aa;
+    margin: 50px auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.small h1 {
+    width: 50%;
+}
+
+.small button {
+    width: 160px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+
+
+.contactBlock {
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+
+
+}
+.group{
+    display: flex;
+}
+
+.contactText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: start;
+    margin: 140px 200px ;
+    gap: 20px;
+
+}
+
+.contactText h1 {
+    font-size: 50px;
+}
+
+.contactText span {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.contactBlock form {
+    width: 556px;
+    padding: 30px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 15px;
+    justify-content: start;
+    background-color: #fff;
+    height: 379px;
+    margin-right: 50px;
+    margin-top: -50px;
+    box-shadow: 0px -3px 4px rgb(207, 204, 204);
+}
+
+form h2 {
+    margin: auto;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#comment {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.Submit {
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    height: 40px;
+    border: 1px solid transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+
+.Submit:hover {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+}
+
+.foodzilla {
+    /* position: absolute; */
+    width: 90%;
+    height: 350px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px;
+    align-items: center;
+    gap: 30px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    /* transform: translateY(-450px); */
+}
+
+.foodzill {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 16px;
+}
+
+.more {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 16px;
+
+
+}
+
+.more,
+.social p {
+    font-size: 14px;
+}
+
+.h5 {
+    font-size: 20px;
+    color: #21A0AA;
+}
+
+.top {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    /* border: 1px solid grey; */
+    color: #21A0AA;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    align-items: center;
+    transform: translateY(-35px);
+    left: 47%;
+}
